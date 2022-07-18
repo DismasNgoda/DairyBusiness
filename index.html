@@ -43,17 +43,30 @@
         <section id='third'>
             <div><h1>These are the Production Reports</h1></div>
             <div class="report">
-                <form>
+                <form name="reportForm">
                     <label for="reports">Generate Report for Income or production?:</label>
                   <select name="reports" id="reports">
                     <option value="#">Choose a Suitable option below</option>    
                     <option value="production">Productions Per Shade</option>
                     <option value="income">Monthly Income Reports</option>
                   </select> <br>
+                  <input id="generateReport" type="submit">
                 </form>
             </div>
         </section>
     </div>
+    <script>
+        let reportForm = document.forms['reportForm'];
+        let reportSelector = document.querySelector('reports')
+        function shedReport(){
+            document.write("Your production in Shed A 510 litres per day.
+            Your production in Shed B 308 litres per day
+            Your production in Shed C 486 litres per day
+            Your production in Shed D 572 litres per day
+            The total production is 1876 litres per day")
+        }
+        
+    </script>
 </body>
 
 </html>

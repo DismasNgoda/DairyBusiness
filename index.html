@@ -69,17 +69,33 @@
             e.preventDefault();
             var select = document.form.reports.value;
             if (select='production'){
-                document.write("Your production in Shed A 510 litres per day
-                Your production in Shed B 100 litres per day
-                Your production in Shed C 120 litres per day
-                Your production in Shed D 130 litres per day
-                The total production is 350 litres per day")
+                document.write("Your production in Shed A 510 litres per day \n
+                Your production in Shed B 100 litres per day \n
+                Your production in Shed C 120 litres per day \n
+                Your production in Shed D 130 litres per day \n
+                The total production is 350 litres per day \n");
 
             }
             else if (select=income){
-                document.write("Your income for Jan is 10000")
+                document.write("Your income for Jan is 10000 \n
+                Your income for Jan is 5000 \n
+                Your income for Feb is 20000 \n
+                Your income for Mar is 30000 \n
+                Your income for Apr is 14000 \n
+                Your income for May is 105600 \n
+                Your income for June is 13000 \n
+                Your income for July is 101200 \n
+                Your income for Aug is 11000 \n
+                Your income for Sept is 1340000 \n
+                Your income for Oct is 11000 \n
+                Your income for Nov is 10100 \n
+                Your income for Dec is 10300 \n");
+            }
+            else {
+                document.write("You have Entered Invalid Input");
             }
         }
+        return(e);
         
 
     </script>

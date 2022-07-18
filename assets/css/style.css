@@ -75,9 +75,14 @@
     
     #first {
         background-color: grey;
+        background-image: url(https://images.unsplash.com/photo-1440428099904-c6d459a7e7b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
     }
+   .section1{
+
+   }
     #second {
     background-color: grey;
+    font-size: 2em;
     }
     #third {
         background-color: grey;
@@ -89,4 +94,22 @@
     form{
         margin: 10%;
     }
+    input[type=submit]:hover {
+        background-color: #45a049;
+      }
+    .form1{
+        padding: 10%;
+        margin: 20%;
+        font-weight: bold;
+      }
+    #entryDate{
+        margin: 5%;
+     }
+    #line{
+        width: 80%;
+    }
+.welcomingNote{
+    margin: 10%;
+    font-weight: bold;
+}
     

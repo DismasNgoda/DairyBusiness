@@ -68,17 +68,19 @@
         form.onsubmit = function (e) {
             e.preventDefault();
             var select = document.form.reports.value;
-            console.log(select);
-            document.getElementById('generateReport').innerHTML = select.toUpperCase();
+            if (select='production'){
+                document.write("Your production in Shed A 510 litres per day
+                Your production in Shed B 100 litres per day
+                Your production in Shed C 120 litres per day
+                Your production in Shed D 130 litres per day
+                The total production is 350 litres per day")
+
+            }
+            else if (select=income){
+                document.write("Your income for Jan is 10000")
+            }
         }
-        let reportSelector = document.querySelector('reports')
-        function shedReport() {
-            document.write("Your production in Shed A 510 litres per day.
-            Your production in Shed B 308 litres per day
-            Your production in Shed C 486 litres per day
-            Your production in Shed D 572 litres per day
-            The total production is 1876 litres per day")
-        }
+        
 
     </script>
 </body>

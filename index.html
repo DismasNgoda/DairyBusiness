@@ -22,7 +22,7 @@
             <h1>Welcome to Our Farm</h1>
         </section>
         <section id='second'>
-            <div class="h1"><h1>Daily Entries</h1></div>
+            <div class="h1"><h1>Daily Entries</h1></div> <hr>
             <div class="form">
                 <form>
                 <label for="date">Today's Date:</label>
@@ -33,13 +33,24 @@
                         <option value="shedB">Shed B</option>
                         <option value="shedC">Shed C</option>
                         <option value="shedD">Shed D</option>
-                  </select>
+                  </select> <br>
+                  <label for="liters"> How Many Liters were recorded today:</label><br>
+                  <input type="number" id="quantity"> <br>
                   <input type="submit">
             </form>
             </div>
         </section>
-        <section id='fourth'>
-            <h1>Third</h1>
+        <section id='third'>
+            <div><h1>These are the Production Reports</h1></div>
+            <div class="report">
+                <form>
+                    <label for="reports">Generate Report for Income or production?:</label>
+                  <select name="reports" id="reports">
+                        <option value="production">Productions Per Shade</option>
+                        <option value="income">Monthly Income Reports</option>
+                  </select> <br>
+                </form>
+            </div>
         </section>
     </div>
 </body>

@@ -85,4 +85,7 @@
     @keyframes fadeIn {
     100% { opacity:1 }
     }
+    form{
+        margin: 10%;
+    }
     

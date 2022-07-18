@@ -13,21 +13,25 @@
 <body>
 
     <nav>
-        <a href="#User"><i class="far fa-user"> User</i></a>
+        <a href="#first"><i class="far fa-user"> User</i></a>
         <a href="#second"><i class="fas fa-briefcase">Daily Records</i></a>
         <a href="#third"><i class="far fa-address-card">Reports</i></a>
     </nav>
     <div class='container'>
-        <section id='first'>
+        <section class="section1" id='first'>
             <h1>Welcome to Our Farm</h1>
+            <div class="welcomingNote">
+                <p>The farm delivers milk to other vendors like Brookside.</p>
+            <p>We aim to bridge in food shortage countrywide</p>
+        </div>
         </section>
         <section id='second'>
             <div class="h1">
                 <h1>Daily Entries</h1>
             </div>
-            <hr>
+            <hr id="line">
             <div class="form">
-                <form>
+                <form class="form1">
                     <label for="date">Today's Date:</label>
                     <input type="datetime-local" id="entryDate" name="entryDate"> <br>
                     <label for="sheds">Choose a Shed:</label>
@@ -47,7 +51,7 @@
             <div>
                 <h1>These are the Production Reports</h1>
             </div>
-            <hr>
+            <hr id="line">
             <div class="report">
                 <form name="reportForm">
                     <label for="reports">

@@ -73,13 +73,13 @@
     }
     
     #first {
-    background:var(--primary-color);
+        background-color: grey;
     }
     #second {
-    background: var(--complimentary-color);
+    background-color: grey;
     }
     #third {
-    background: var(--light-color);
+        background-color: grey;
     }
     
     @keyframes fadeIn {

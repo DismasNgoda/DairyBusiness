@@ -44,7 +44,8 @@
     width: 0;
     opacity: 0;
     transition: all ease-in .5s;
-    display: flex;
+    padding-left: 30%;
+    padding-top: 10%;
     justify-content: center;
     align-items: center;
     } 

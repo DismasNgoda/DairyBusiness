@@ -22,52 +22,64 @@
             <h1>Welcome to Our Farm</h1>
         </section>
         <section id='second'>
-            <div class="h1"><h1>Daily Entries</h1></div> <hr>
+            <div class="h1">
+                <h1>Daily Entries</h1>
+            </div>
+            <hr>
             <div class="form">
                 <form>
-                <label for="date">Today's Date:</label>
-                  <input type="datetime-local" id="entryDate" name="entryDate"> <br>
-                  <label for="sheds">Choose a Shed:</label>
-                  <select name="sheds" id="sheds">
+                    <label for="date">Today's Date:</label>
+                    <input type="datetime-local" id="entryDate" name="entryDate"> <br>
+                    <label for="sheds">Choose a Shed:</label>
+                    <select name="sheds" id="sheds">
                         <option value="shedA">Shed A</option>
                         <option value="shedB">Shed B</option>
                         <option value="shedC">Shed C</option>
                         <option value="shedD">Shed D</option>
-                  </select> <br>
-                  <label for="liters"> How Many Liters were recorded today:</label><br>
-                  <input type="number" id="quantity"> <br>
-                  <input type="submit">
-            </form>
+                    </select> <br>
+                    <label for="liters"> How Many Liters were recorded today:</label><br>
+                    <input type="number" id="quantity"> <br>
+                    <input type="submit">
+                </form>
             </div>
         </section>
         <section id='third'>
-            <div><h1>These are the Production Reports</h1></div> <hr>
+            <div>
+                <h1>These are the Production Reports</h1>
+            </div>
+            <hr>
             <div class="report">
                 <form name="reportForm">
                     <label for="reports">
                         Generate Report for Income or production?:
                     </label>
-                  <select name="reports" id="reports">
-                    <option value="#">Choose a Suitable option below</option>    
-                    <option value="production" id="shadeReport">Productions Per Shade</option>
-                    <option value="income" id="incomeReport">Monthly Income Reports</option>
-                  </select> <br>
-                  <input id="generateReport" type="submit">
+                    <select name="reports" id="reports">
+                        <option value="#">Choose a Suitable option below</option>
+                        <option value="production" id="shadeReport">Productions Per Shade</option>
+                        <option value="income" id="incomeReport">Monthly Income Reports</option>
+                    </select> <br>
+                    <input id="generateReport" type="submit">
                 </form>
             </div>
         </section>
     </div>
     <script>
         let reportForm = document.forms['reportForm'];
+        form.onsubmit = function (e) {
+            e.preventDefault();
+            var select = document.form.reports.value;
+            console.log(select);
+            document.getElementById('generateReport').innerHTML = select.toUpperCase();
+        }
         let reportSelector = document.querySelector('reports')
-        function shedReport(){
+        function shedReport() {
             document.write("Your production in Shed A 510 litres per day.
             Your production in Shed B 308 litres per day
             Your production in Shed C 486 litres per day
             Your production in Shed D 572 litres per day
             The total production is 1876 litres per day")
         }
-        
+
     </script>
 </body>
 

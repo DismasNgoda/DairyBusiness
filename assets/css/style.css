@@ -77,12 +77,7 @@
     #second {
     background: var(--complimentary-color);
     }
-    
     #third {
-    background: var(--contrast-color);
-    }
-    
-    #fourth {
     background: var(--light-color);
     }
     
